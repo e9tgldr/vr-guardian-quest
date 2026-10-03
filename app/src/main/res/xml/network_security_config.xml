@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  DEMO BUILD: this app talks to the teacher laptop over plain HTTP on the LAN
+  (USB: adb reverse -> http://127.0.0.1:8000, Wi-Fi: http://<laptop-ip>:8000).
+  The laptop's IP changes per network, so cleartext is allowed globally for now.
+  Before any real deployment: move the hub to HTTPS and set this to false.
+-->
+<network-security-config>
+  <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
