@@ -53,3 +53,6 @@ build/
 .gradle/
 *.apk
 local.properties
+
+# binary Unity asset data, misnamed .env - not source
+*.env
